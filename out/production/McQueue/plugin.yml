@@ -1,5 +1,5 @@
 main: eu.niklas.main.Main
-name: McQueue
+name: MCPartyQueue
 version: 1.0
 author: Devserver
 description: Queues the player.

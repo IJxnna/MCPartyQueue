@@ -6,7 +6,6 @@ package eu.niklas.main;
 // Coded by Niklas / Devserver
 
 
-import eu.niklas.listener.onJoin;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 //
@@ -14,7 +13,6 @@ public class Main extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        Bukkit.getPluginManager().registerEvents(new onJoin(),this);
 
     }
 
