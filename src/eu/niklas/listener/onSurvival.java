@@ -32,7 +32,7 @@ public class onSurvival implements Listener {
 
                     while(p.isOnline()) {
                         if(queue.get(0) == p) {
-                            wait(2000);
+                            Thread.sleep(7000);
                             p.sendMessage("§8§l[§5§lQueue§8§l] §6You joined the server!! Welcome. §7If you have any questions, read §l/help §7or ask staff**");
                             e.getPlayer().performCommand("/server Survival");
                         }
@@ -41,24 +41,13 @@ public class onSurvival implements Listener {
 
 
                     if (queue.get(0).getUniqueId() == p.getUniqueId()) {
-                        wait(7000);
                         queue.remove(p);
+                        Thread.sleep(7000);
                         e.setCancelled(false);
-                        p.sendMessage("§8§l[§5§lQueue§8§l] §6You joined the server!! Welcome. §7If you have any questions, read §l/help §7or ask staff**");
-
-                    } else if (queue.get(1).getUniqueId() == p.getUniqueId()) {
-                        e.setCancelled(false);
-                        wait(7000);
-                        queue.remove(p);
-                        p.sendMessage("§8§l[§5§lQueue§8§l] §6You joined the server!! Welcome. §7If you have any questions, read §l/help §7or ask staff**");
-
-                    } else if (queue.get(2).getUniqueId() == p.getUniqueId()) {
-                        e.setCancelled(false);
-                        wait(7000);
-                        queue.remove(p);
                         p.sendMessage("§8§l[§5§lQueue§8§l] §6You joined the server!! Welcome. §7If you have any questions, read §l/help §7or ask staff**");
 
                     } else {
+
 
                         queue.add(p);
                         int pos = 0;
@@ -81,7 +70,10 @@ public class onSurvival implements Listener {
 
                     if(queue.size() == 0) {
                         queue.add(p);
-                        wait(5000);
+
+                        Thread.sleep(7000);
+
+
                         e.setCancelled(false);
                         p.sendMessage("§8§l[§5§lQueue§8§l] §6You joined the server!! Welcome. §7If you have any questions, read §l/help §7or ask staff**");
                     }else{
@@ -99,7 +91,6 @@ public class onSurvival implements Listener {
                                 " " +
                                 "§5/buy§7!");
                         e.setCancelled(true);
-                        wait(100000);
                         queue.remove(p);
                         if(p.isOnline()) {
                             p.sendMessage("§7You got removed from the QUEUE.");
