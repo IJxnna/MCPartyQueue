@@ -80,7 +80,10 @@ public class onSurvival implements Listener {
                 } else {
 
                     if(queue.size() == 0) {
+                        queue.add(p);
+                        wait(5000);
                         e.setCancelled(false);
+                        p.sendMessage("§8§l[§5§lQueue§8§l] §6You joined the server!! Welcome. §7If you have any questions, read §l/help §7or ask staff**");
                     }else{
                         queue.add(p);
                         int pos = 0;
