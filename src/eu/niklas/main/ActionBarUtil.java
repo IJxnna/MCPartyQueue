@@ -34,7 +34,7 @@ public class ActionBarUtil {
     public static void sendActionBarMessage(@NotNull Player bukkitPlayer, @NotNull String message) {
         sendRawActionBarMessage(bukkitPlayer, "{\"text\": \"" + message + "\"}");
     }
-
+//
     /**
      * Sends a raw message (JSON format) to the player's action bar. Note: while the action bar accepts raw messages
      * it is currently only capable of displaying text.

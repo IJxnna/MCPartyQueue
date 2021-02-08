@@ -17,7 +17,7 @@ import java.util.ArrayList;
 public class onJoin implements Listener {
 
     ArrayList<Player> queue = new ArrayList<Player>();
-
+//
 
     @EventHandler
     public void onJoin(PlayerJoinEvent e) {
