@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="McQueue">
+    <output-path>E:/MC</output-path>
+    <root id="archive" name="McQueue.jar">
+      <element id="module-output" name="McQueue" />
+    </root>
+  </artifact>
+</component>
